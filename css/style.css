@@ -1,4 +1,9 @@
 /* GLOBAL */
+:root {
+  --brand-color:  #ea625c;
+  --page-font-family: "Roboto","Arial", san-serif;
+}
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -17,7 +22,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: var(--page-font-family);
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
@@ -33,7 +38,7 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -41,7 +46,296 @@ img {
 }
 
 
+/* SITE-HEADER */
+.site-header {
+  /* background-color: rgb(246, 249, 252); */
+}
+.site-header-content {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.logo-link {
+  margin-right: auto;
+}
+
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.logo-link:active {
+  opacity: 0.7;
+}
+
+.site-haeder-logo {
+  display: block;
+  width: 35px;
+  height: 41.5px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.sitenav-site-header {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.site-header-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.site-header-item {
+  margin-right: 30px;
+}
+
+.site-header-item:last-child {
+  margin-right: 0px;
+}
+
+.sitenav-link {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  color: #333;
+  padding-bottom: 3px;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.sitenav-link:hover {
+  border-color: #333;
+  color: #000;
+}
+
+.sitenav-link:active {
+  opacity: 0.6;
+}
+
+.search-form-input {
+  border: none;
+  background-color: transparent;
+  padding-top: 6px;
+  padding-left: 5px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #333;
+}
+
+
 /* MAIN-CONTENT */
-  .main-content {
-    flex-grow: 1;
+.main-content {
+  flex-grow: 1;
+}
+
+.home-landing {
+  padding-top: 91px;
+  padding-bottom: 183px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/intro-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left calc(50% + 500px) center;
+  border-bottom: 2px solid #999;
+
+}
+
+.landing-content {
+  width: 490px;
+}
+
+.landing-heading {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.landing-info {
+  padding-left: 37px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #777;
+  border-left: 3px solid #888;
+}
+
+.landing-link {
+  display: inline-block;
+  width: 260px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 3px;
+  background-color: var(--brand-color);
+  text-align: center;
+}
+
+.landing-link:hover {
+  opacity: 0.8;
+}
+
+.landing-link:active {
+  opacity: 0.7;
+}
+
+
+/* FEATURES  */
+.features {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.features-item {
+  width: 280px;
+}
+.features-heading {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.features-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.features-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: var(--brand-color);
+}
+
+.features-link:hover {
+  opacity: 0.8;
+}
+
+.link-wrapper {
+  display: flex;
+  align-items: center;
+}
+.features-divider {
+  border: 0;
+  width: 40px;
+  height: 3px;
+  margin: 0;
+  margin-right: 10px;
+  background-color: var(--brand-color);
+}
+
+
+/* NIKE-BRAND - SECTION */
+.info-sec {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-image: url(../img/watch-in-hand.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+}
+.infosec-content {
+  width: 490px;
+  margin-right: 110px;
+}
+
+
+/* SITE-FOOTER */
+.site-footer {
+  width: 100%;
+  height: 830px;
+  padding-top: 240px;
+  padding-bottom: 240px;
+  margin-top: 70px;
+  background-image: url(../img/runners.jpg);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position: center;
+}
+
+
+.site-footer-content {
+  width: 490px;
+  margin-left: auto;
+  color: #fff;
+}
+
+.sitefooter-heading {
+  color: #fff;
+}
+
+.sitefooter-info {
+  color: #fff;
+  border-color: #fff;
+}
+
+.site-footer-link:hover {
+  opacity:0.9;
+}
+
+.site-footer-link:active {
+  opacity: 0.8;
+}
+
+
+/* CSS - RETINA */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .home-landing {
+    background-image: url(../img/intro-bg@2x.png);
   }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .info-sec {
+    background-image: url(../img/watch-in-hand@2x.jpg);
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .site-footer{
+    background-image: url(../img/runners@2x.jpg);
+  }
+}

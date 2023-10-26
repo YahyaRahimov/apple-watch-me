@@ -3,18 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <title>Apple watch</title>
+
+  <!-- Google-fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS-STYLES -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="site-header-content container">
+      <a class="logo-link" href="#">
+        <img class="site-haeder-logo" src="img/apple-logo.svg" alt="Ste-logo" width="35" height="42">
+      </a>
+      <nav class="sitenav-site-header">
+        <ul class="site-header-list">
+          <li class="site-header-item"><a class="sitenav-link" href="#">Home</a></li>
+          <li class="site-header-item"><a class="sitenav-link" href="#">About</a></li>
+          <li class="site-header-item"><a class="sitenav-link" href="#">Services</a></li>
+          <li class="site-header-item"><a class="sitenav-link" href="#">Offers</a></li>
+        </ul>
+      </nav>
+
+      <form action="https://echo.htmlacademy.ru" method="GET">
+        <input class="search-form-input" type="search" name="search" placeholder="How can we help you?"
+        aria-label="Search" required>
+      </form>
+    </div>
+  </header>
+
+
+  <!-- MAIN-CONTENT -->
+
   <main class="main-content">
+    <section class="home-landing">
+      <div class="container">
+        <div class="landing">
+          <div class="landing-content">
+            <h1 class="landing-heading">Freedom calls.</h1>
+            <p class="landing-info">Answer a call from your surfboard. Ask Siri to send a message. Stream your favorite songs on your run. And do it all while leaving your phone behind. Introducing Apple Watch Series 3 with cellular. Now you have the freedom to go with just your watch.</p>
+            <a class="landing-link" href="#">Watch the keynote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FEATURES -->
     <div class="container">
+      <section class="features">
+        <ul class="features-list">
+          <!-- 1 -->
+          <li class="features-item">
+            <h2 class="features-heading">Know your runs. In and out.</h2>
+            <p class="features-text">Train smarter with more in-run stats. Want to compare a run to your last five? Just swipe left. Mark splits by selecting pause or using gestures, like tapping the screen or double-clicking the side button. And get a full post-run report, including elevation.</p>
+          </li>
+          <!-- 2 -->
+          <li class="features-item">
+            <h2 class="features-heading">Run in good spirits.</h2>
+            <p class="features-text">A little support can go a long way. You can receive encouraging emoji from friends. And reminders triggered by your friends’ shared activity, the current weather, or your own history give you every reason to run.</p>
+          </li>
+          <!-- 3 -->
+          <li class="features-item">
+            <h2 class="features-heading">Just do it. Sunday.</h2>
+            <p class="features-text">Run every Sunday and see how long you can keep your streak alive. Fuel your run with exclusive Nike+ Run Club playlists on Apple Music.</p>
+            <a class="features-link" href="#">
+              <span class="link-wrapper">
+                <hr class="features-divider">LEARN MORE
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+
+      <!-- NIKE-BRAND - SECTION -->
+      <section class="info-sec">
+        <div class="infosec-content">
+          <h1 class="infosec-heading landing-heading">Nike Sport Band.
+            Light. Flexible.
+            Breathable.</h1>
+            <p class="infosec-info landing-info">Made from the same durable, lightweight fluoroelastomer as the original Apple Watch Sport Band, the Nike Sport Band reduces weight and improves ventilation via row after row of compression-molded perforations.</p>
+
+            <a class="landing-link infosec-link" href="#">Buy now</a>
+        </div>
+      </section>
 
     </div>
   </main>
+      <!-- RUNNER-SECTION -->
+      <footer class="site-footer">
+        <div class="site-footer-content-wrapper container">
+          <div class="site-footer-content">
+            <h1 class="sitefooter-heading landing-heading">Take control of your health. </h1>
+              <p class="sitefooter-info landing-info">With built-in GPS and altimeter, Apple Watch Nike+ has all the features to help you take your run to the next level. You can even pair your watch wirelessly with compatible gym equipment. And it’s swimproof, so you can take a post-run dip in the pool.</p>
+
+              <a class="landing-link site-footer-link" href="#" target="_blank">Explore features</a>
+          </div>
+
+        </div>
+      </footer>
+
+
+
+
+
 
   <script src="js/main.js"></script>
 </body>
