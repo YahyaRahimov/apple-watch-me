@@ -29,6 +29,11 @@ body {
   color: #222;
 }
 
+*:focus {
+  outline: 2px dashed var(--brand-color);
+  outline-offset: 2px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -206,6 +211,7 @@ img {
 .features-item {
   width: 280px;
 }
+
 .features-heading {
   font-size: 18px;
   font-weight: 700;
@@ -217,17 +223,47 @@ img {
   margin-top: 0;
   margin-bottom: 20px;
 }
+
+.features-item-divider {
+  width: 8px;
+  height: 8px;
+  border: 0;
+  margin-left: 0;
+  background-color: #ddd;
+  box-shadow: 16px 0 0 0 #ddd, 32px 0 0 0 #ddd;
+}
+
 .features-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   font-size: 16px;
+  line-height: 1.6;
   font-weight: bold;
   line-height: 1.6;
   color: var(--brand-color);
 }
 
-.features-link:hover {
-  opacity: 0.8;
+.features-link::before {
+  width: 40px;
+  height: 3px;
+  background-color: var(--brand-color);
+  margin-right: 10px;
+  transition: width 0.3s ease;
+  content: "";
+}
+
+.features-link:active {
+  opacity: 0.6;
+}
+
+.features-link:hover::before {
+  width: 60px;
+}
+
+.features-link:active::before {
+  width: 50px;
+  transition: width 0.2s ease;
 }
 
 .link-wrapper {
